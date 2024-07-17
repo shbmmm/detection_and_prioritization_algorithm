@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_82c09af0fa71fc6f0cb70cd90b41fd78 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_82c09af0fa71fc6f0cb70cd90b41fd78" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_82c09af0fa71fc6f0cb70cd90b41fd78 = L.map(
+                "map_82c09af0fa71fc6f0cb70cd90b41fd78",
+                {
+                    center: [-35.282, 149.1286],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cd8d9809ebf89d355e142fd45d274db3 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_cd8d9809ebf89d355e142fd45d274db3.addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var marker_2dc6c6a3b965300c0898c04f95de1ff8 = L.marker(
+                [-38.12091318519795, 141.33473436685952],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_825cef3dde3f4e0a2b29800419d6b2f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_2dc6c6a3b965300c0898c04f95de1ff8.setIcon(icon_825cef3dde3f4e0a2b29800419d6b2f5);
+        
+    
+        var popup_16c3cf5c85f6e9870f5723b10abce202 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f70e12740a43055efc1989415913d3d6 = $(`<div id="html_f70e12740a43055efc1989415913d3d6" style="width: 100.0%; height: 100.0%;">user1: The fire has spread to new areas. (Sentiment: 0.13636363636363635)</div>`)[0];
+                popup_16c3cf5c85f6e9870f5723b10abce202.setContent(html_f70e12740a43055efc1989415913d3d6);
+            
+        
+
+        marker_2dc6c6a3b965300c0898c04f95de1ff8.bindPopup(popup_16c3cf5c85f6e9870f5723b10abce202)
+        ;
+
+        
+    
+    
+            var marker_a0cab89650fcc85a2f47a5655297bbc1 = L.marker(
+                [-33.07576581125397, 148.17025787527734],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_24632f3d246d4d15470d2120680e306a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_a0cab89650fcc85a2f47a5655297bbc1.setIcon(icon_24632f3d246d4d15470d2120680e306a);
+        
+    
+        var popup_fec6bf2febe3d67799bdec353ccae230 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9e7ecac28037e8df625e57f9bc171ba = $(`<div id="html_f9e7ecac28037e8df625e57f9bc171ba" style="width: 100.0%; height: 100.0%;">user2: Sending prayers. (Sentiment: 0.0)</div>`)[0];
+                popup_fec6bf2febe3d67799bdec353ccae230.setContent(html_f9e7ecac28037e8df625e57f9bc171ba);
+            
+        
+
+        marker_a0cab89650fcc85a2f47a5655297bbc1.bindPopup(popup_fec6bf2febe3d67799bdec353ccae230)
+        ;
+
+        
+    
+    
+            var marker_03aa58ece5cb197d2e15a566fe872225 = L.marker(
+                [-36.90937721450465, 147.3541112211642],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_0d33201f06bb0ee96573e83b2f824888 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_03aa58ece5cb197d2e15a566fe872225.setIcon(icon_0d33201f06bb0ee96573e83b2f824888);
+        
+    
+        var popup_120b60de0b5b97c30f5676b4c5f9cb60 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b39ee62dc499a3907c45acb0e7b1073 = $(`<div id="html_0b39ee62dc499a3907c45acb0e7b1073" style="width: 100.0%; height: 100.0%;">user3: Terrible disaster! (Sentiment: -1.0)</div>`)[0];
+                popup_120b60de0b5b97c30f5676b4c5f9cb60.setContent(html_0b39ee62dc499a3907c45acb0e7b1073);
+            
+        
+
+        marker_03aa58ece5cb197d2e15a566fe872225.bindPopup(popup_120b60de0b5b97c30f5676b4c5f9cb60)
+        ;
+
+        
+    
+    
+            var marker_ea7d18998cd839c1a597e237aa005282 = L.marker(
+                [-34.838415493081, 144.31606203394296],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_49337a557657f84f4dcc2c4621e94bcf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_ea7d18998cd839c1a597e237aa005282.setIcon(icon_49337a557657f84f4dcc2c4621e94bcf);
+        
+    
+        var popup_ea251e773f8b569dc991d30c1c94ee2c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_040e948689a326170c9afb004a1445c7 = $(`<div id="html_040e948689a326170c9afb004a1445c7" style="width: 100.0%; height: 100.0%;">user4: This is an emergency. (Sentiment: 0.0)</div>`)[0];
+                popup_ea251e773f8b569dc991d30c1c94ee2c.setContent(html_040e948689a326170c9afb004a1445c7);
+            
+        
+
+        marker_ea7d18998cd839c1a597e237aa005282.bindPopup(popup_ea251e773f8b569dc991d30c1c94ee2c)
+        ;
+
+        
+    
+    
+            var marker_8b0295c7df6db38ec3a745a51d02569f = L.marker(
+                [-32.79661755064099, 141.61184910608753],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_5aa3ca23572d1602a0c5b891f37fc115 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_8b0295c7df6db38ec3a745a51d02569f.setIcon(icon_5aa3ca23572d1602a0c5b891f37fc115);
+        
+    
+        var popup_98a27418ed7733ebe2638b4636854c29 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_330ecdc95fb6d841fdf10f959939f8c9 = $(`<div id="html_330ecdc95fb6d841fdf10f959939f8c9" style="width: 100.0%; height: 100.0%;">user5: The fire keeps spreading. (Sentiment: 0.0)</div>`)[0];
+                popup_98a27418ed7733ebe2638b4636854c29.setContent(html_330ecdc95fb6d841fdf10f959939f8c9);
+            
+        
+
+        marker_8b0295c7df6db38ec3a745a51d02569f.bindPopup(popup_98a27418ed7733ebe2638b4636854c29)
+        ;
+
+        
+    
+    
+            var marker_71b9e58cbd7f358c1b243263fdf27c61 = L.marker(
+                [-36.17081162325617, 144.65359409507795],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_b66c61a3dd347ec60d1751a28f471700 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_71b9e58cbd7f358c1b243263fdf27c61.setIcon(icon_b66c61a3dd347ec60d1751a28f471700);
+        
+    
+        var popup_d826cbfbdfeb85de514d1ddb9ecf822c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b205ff3f67b8c214466ba2a6acd7d3d = $(`<div id="html_6b205ff3f67b8c214466ba2a6acd7d3d" style="width: 100.0%; height: 100.0%;">user6: Wishing for everyone’s safety. (Sentiment: 0.0)</div>`)[0];
+                popup_d826cbfbdfeb85de514d1ddb9ecf822c.setContent(html_6b205ff3f67b8c214466ba2a6acd7d3d);
+            
+        
+
+        marker_71b9e58cbd7f358c1b243263fdf27c61.bindPopup(popup_d826cbfbdfeb85de514d1ddb9ecf822c)
+        ;
+
+        
+    
+    
+            var marker_8284aa285706dd7794d1cbdb1892a87a = L.marker(
+                [-37.089818065777784, 150.9790196950942],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_e4fd023ab3b45c4c40e6770e2644346a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_8284aa285706dd7794d1cbdb1892a87a.setIcon(icon_e4fd023ab3b45c4c40e6770e2644346a);
+        
+    
+        var popup_ed33ec18321fac09a72bc3fd262c0a60 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_274eed4ea766f48c7bbeb839a22dc97a = $(`<div id="html_274eed4ea766f48c7bbeb839a22dc97a" style="width: 100.0%; height: 100.0%;">user7: Heartbreaking scenes from the bushfire. (Sentiment: 0.0)</div>`)[0];
+                popup_ed33ec18321fac09a72bc3fd262c0a60.setContent(html_274eed4ea766f48c7bbeb839a22dc97a);
+            
+        
+
+        marker_8284aa285706dd7794d1cbdb1892a87a.bindPopup(popup_ed33ec18321fac09a72bc3fd262c0a60)
+        ;
+
+        
+    
+    
+            var marker_6878939d1ba187d09d634e3f9fc305aa = L.marker(
+                [-34.02737716924836, 142.330763455009],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_e680ef43748d0aaf4be1bdfa49bb1593 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_6878939d1ba187d09d634e3f9fc305aa.setIcon(icon_e680ef43748d0aaf4be1bdfa49bb1593);
+        
+    
+        var popup_fe45356928d089d40daf31e9f0640c55 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ead940f1b99396dec16cd068c30c2c0 = $(`<div id="html_2ead940f1b99396dec16cd068c30c2c0" style="width: 100.0%; height: 100.0%;">user8: The fire has spread to new areas. (Sentiment: 0.13636363636363635)</div>`)[0];
+                popup_fe45356928d089d40daf31e9f0640c55.setContent(html_2ead940f1b99396dec16cd068c30c2c0);
+            
+        
+
+        marker_6878939d1ba187d09d634e3f9fc305aa.bindPopup(popup_fe45356928d089d40daf31e9f0640c55)
+        ;
+
+        
+    
+    
+            var marker_1cfa589c91ea41aec1e2cc4a19f40c19 = L.marker(
+                [-36.45673003172881, 147.36221026889854],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_36feeb4ddecd6e52deed0bdba52167b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_1cfa589c91ea41aec1e2cc4a19f40c19.setIcon(icon_36feeb4ddecd6e52deed0bdba52167b9);
+        
+    
+        var popup_909ed8e1cd7d111c5a3309a133750119 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_64c039830efb485c1e7358cdf112def0 = $(`<div id="html_64c039830efb485c1e7358cdf112def0" style="width: 100.0%; height: 100.0%;">user9: This is an emergency. (Sentiment: 0.0)</div>`)[0];
+                popup_909ed8e1cd7d111c5a3309a133750119.setContent(html_64c039830efb485c1e7358cdf112def0);
+            
+        
+
+        marker_1cfa589c91ea41aec1e2cc4a19f40c19.bindPopup(popup_909ed8e1cd7d111c5a3309a133750119)
+        ;
+
+        
+    
+    
+            var marker_c11d8575b2b04a0cf623769130dc5f3a = L.marker(
+                [-32.7740172354849, 144.4584842661955],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_dd8244d6e85c1238a183441540bc03ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_c11d8575b2b04a0cf623769130dc5f3a.setIcon(icon_dd8244d6e85c1238a183441540bc03ad);
+        
+    
+        var popup_892b23ee9835bb3adad91fb5c53ac632 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_734c48733cde741c2dfe39f707cd2068 = $(`<div id="html_734c48733cde741c2dfe39f707cd2068" style="width: 100.0%; height: 100.0%;">user10: The fire has spread to new areas. (Sentiment: 0.13636363636363635)</div>`)[0];
+                popup_892b23ee9835bb3adad91fb5c53ac632.setContent(html_734c48733cde741c2dfe39f707cd2068);
+            
+        
+
+        marker_c11d8575b2b04a0cf623769130dc5f3a.bindPopup(popup_892b23ee9835bb3adad91fb5c53ac632)
+        ;
+
+        
+    
+    
+            var marker_e9d05a1a25458fe37d6c8ca5e3dea311 = L.marker(
+                [-36.668188821652784, 150.3676325101563],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_1e2004e7dfb015145172321163987c19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_e9d05a1a25458fe37d6c8ca5e3dea311.setIcon(icon_1e2004e7dfb015145172321163987c19);
+        
+    
+        var popup_473d1895812bf4796573af321e7fc342 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65925c3b89137e39dba3a59c2ae2d62f = $(`<div id="html_65925c3b89137e39dba3a59c2ae2d62f" style="width: 100.0%; height: 100.0%;">user11: Hoping for rain to stop the fire. (Sentiment: 0.0)</div>`)[0];
+                popup_473d1895812bf4796573af321e7fc342.setContent(html_65925c3b89137e39dba3a59c2ae2d62f);
+            
+        
+
+        marker_e9d05a1a25458fe37d6c8ca5e3dea311.bindPopup(popup_473d1895812bf4796573af321e7fc342)
+        ;
+
+        
+    
+    
+            var marker_c381aaa9213853f04f16e10ca8c9d35a = L.marker(
+                [-37.90867088818523, 144.36688956445684],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_7bec2eaaf6a776f5e62f71849c10c20d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c381aaa9213853f04f16e10ca8c9d35a.setIcon(icon_7bec2eaaf6a776f5e62f71849c10c20d);
+        
+    
+        var popup_c273b0c0ea0ae5983a5edb7f7a416392 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7cee6025db80dd37ff2b0a8db8c98a9d = $(`<div id="html_7cee6025db80dd37ff2b0a8db8c98a9d" style="width: 100.0%; height: 100.0%;">user12: Stay safe everyone. (Sentiment: 0.5)</div>`)[0];
+                popup_c273b0c0ea0ae5983a5edb7f7a416392.setContent(html_7cee6025db80dd37ff2b0a8db8c98a9d);
+            
+        
+
+        marker_c381aaa9213853f04f16e10ca8c9d35a.bindPopup(popup_c273b0c0ea0ae5983a5edb7f7a416392)
+        ;
+
+        
+    
+    
+            var marker_1fa9ca88c46e64d7ee3d52f0adc06658 = L.marker(
+                [-34.51814322419917, 144.02251522332926],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_590904cde805e66f2d2f9901f31be047 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_1fa9ca88c46e64d7ee3d52f0adc06658.setIcon(icon_590904cde805e66f2d2f9901f31be047);
+        
+    
+        var popup_a6efd616e0061c97cf28a555649ead23 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b2c22d1b28009aa019b60d29a4def6c = $(`<div id="html_7b2c22d1b28009aa019b60d29a4def6c" style="width: 100.0%; height: 100.0%;">user13: Wishing for everyone’s safety. (Sentiment: 0.0)</div>`)[0];
+                popup_a6efd616e0061c97cf28a555649ead23.setContent(html_7b2c22d1b28009aa019b60d29a4def6c);
+            
+        
+
+        marker_1fa9ca88c46e64d7ee3d52f0adc06658.bindPopup(popup_a6efd616e0061c97cf28a555649ead23)
+        ;
+
+        
+    
+    
+            var marker_25da5b7dd09c410938a20282b956ea33 = L.marker(
+                [-36.19465597845832, 145.87341045100376],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_77876b71df54e1a8718ce0717d3be245 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_25da5b7dd09c410938a20282b956ea33.setIcon(icon_77876b71df54e1a8718ce0717d3be245);
+        
+    
+        var popup_0ec911a83e39bd987330b66155dee9d6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c4fd5ce0de41792db1c0a56c8b841a14 = $(`<div id="html_c4fd5ce0de41792db1c0a56c8b841a14" style="width: 100.0%; height: 100.0%;">user14: Firefighters are heroes! (Sentiment: 0.0)</div>`)[0];
+                popup_0ec911a83e39bd987330b66155dee9d6.setContent(html_c4fd5ce0de41792db1c0a56c8b841a14);
+            
+        
+
+        marker_25da5b7dd09c410938a20282b956ea33.bindPopup(popup_0ec911a83e39bd987330b66155dee9d6)
+        ;
+
+        
+    
+    
+            var marker_cadfad1916d34dd2b4ecaf17621fec4c = L.marker(
+                [-32.03447045234877, 145.2504216961987],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_e071886972f9f549286206dac6543d45 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cadfad1916d34dd2b4ecaf17621fec4c.setIcon(icon_e071886972f9f549286206dac6543d45);
+        
+    
+        var popup_e750a938e6225286ab0387f9f8a32799 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81542600e15e00ef05a950121c3d4fa9 = $(`<div id="html_81542600e15e00ef05a950121c3d4fa9" style="width: 100.0%; height: 100.0%;">user15: The fire is getting worse. (Sentiment: -0.4)</div>`)[0];
+                popup_e750a938e6225286ab0387f9f8a32799.setContent(html_81542600e15e00ef05a950121c3d4fa9);
+            
+        
+
+        marker_cadfad1916d34dd2b4ecaf17621fec4c.bindPopup(popup_e750a938e6225286ab0387f9f8a32799)
+        ;
+
+        
+    
+    
+            var marker_b66630df8b73567b6ac70b6909d98a9c = L.marker(
+                [-34.04166004437112, 140.24375835058078],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_ee288b9718fb5b1fb60b79bf174d3cb1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b66630df8b73567b6ac70b6909d98a9c.setIcon(icon_ee288b9718fb5b1fb60b79bf174d3cb1);
+        
+    
+        var popup_0c0051f3460a5bd4abbf13469a2901ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3af7025c9205d3e92ff4aa1ca44f32a9 = $(`<div id="html_3af7025c9205d3e92ff4aa1ca44f32a9" style="width: 100.0%; height: 100.0%;">user16: Feeling so sad about the fire. (Sentiment: -0.5)</div>`)[0];
+                popup_0c0051f3460a5bd4abbf13469a2901ec.setContent(html_3af7025c9205d3e92ff4aa1ca44f32a9);
+            
+        
+
+        marker_b66630df8b73567b6ac70b6909d98a9c.bindPopup(popup_0c0051f3460a5bd4abbf13469a2901ec)
+        ;
+
+        
+    
+    
+            var marker_eaf4db53f8b58b3c46c115fc3588b4f8 = L.marker(
+                [-37.043724258589954, 140.1365057326982],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_529f5348aa5054678e8285ecc4d8b25e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_eaf4db53f8b58b3c46c115fc3588b4f8.setIcon(icon_529f5348aa5054678e8285ecc4d8b25e);
+        
+    
+        var popup_f5de98713832c73189a05ade99fc9209 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48567a02fadd92a5ae20230e8a53453d = $(`<div id="html_48567a02fadd92a5ae20230e8a53453d" style="width: 100.0%; height: 100.0%;">user17: Can’t believe how bad it is. (Sentiment: -0.6999999999999998)</div>`)[0];
+                popup_f5de98713832c73189a05ade99fc9209.setContent(html_48567a02fadd92a5ae20230e8a53453d);
+            
+        
+
+        marker_eaf4db53f8b58b3c46c115fc3588b4f8.bindPopup(popup_f5de98713832c73189a05ade99fc9209)
+        ;
+
+        
+    
+    
+            var marker_6126b168c50b96018b3b87ef4e5b25b8 = L.marker(
+                [-36.97548074268303, 144.62487156614748],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_d203191ff705f150dfb123ccb337fd90 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_6126b168c50b96018b3b87ef4e5b25b8.setIcon(icon_d203191ff705f150dfb123ccb337fd90);
+        
+    
+        var popup_b63eb7d01f219ec3d9f611eacef0f87a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a3f372ca7c9b265082f6010f26d5d23 = $(`<div id="html_1a3f372ca7c9b265082f6010f26d5d23" style="width: 100.0%; height: 100.0%;">user18: Praying for the affected families. (Sentiment: 0.0)</div>`)[0];
+                popup_b63eb7d01f219ec3d9f611eacef0f87a.setContent(html_1a3f372ca7c9b265082f6010f26d5d23);
+            
+        
+
+        marker_6126b168c50b96018b3b87ef4e5b25b8.bindPopup(popup_b63eb7d01f219ec3d9f611eacef0f87a)
+        ;
+
+        
+    
+    
+            var marker_9fbdff1216c99619d71b39c0a1dea266 = L.marker(
+                [-34.80470631184147, 148.5081832442704],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_fda2b38c50b146e2f2fd3f2b5ef24741 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_9fbdff1216c99619d71b39c0a1dea266.setIcon(icon_fda2b38c50b146e2f2fd3f2b5ef24741);
+        
+    
+        var popup_95dcbc9c6c15cd6e1164b660b0eac4ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ccf7d7b926c410e7df30890c2351505f = $(`<div id="html_ccf7d7b926c410e7df30890c2351505f" style="width: 100.0%; height: 100.0%;">user19: The fire is shocking. (Sentiment: -1.0)</div>`)[0];
+                popup_95dcbc9c6c15cd6e1164b660b0eac4ca.setContent(html_ccf7d7b926c410e7df30890c2351505f);
+            
+        
+
+        marker_9fbdff1216c99619d71b39c0a1dea266.bindPopup(popup_95dcbc9c6c15cd6e1164b660b0eac4ca)
+        ;
+
+        
+    
+    
+            var marker_5fdb133eb1f446f62da90260f8440058 = L.marker(
+                [-34.98429167568195, 142.14714215127574],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_d2b15303026ad66c52181587b2c7bdc0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_5fdb133eb1f446f62da90260f8440058.setIcon(icon_d2b15303026ad66c52181587b2c7bdc0);
+        
+    
+        var popup_c7278507bec12cd3bd4a5d737b21d953 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b280f372b51fb4225fb0155a66c1ae10 = $(`<div id="html_b280f372b51fb4225fb0155a66c1ae10" style="width: 100.0%; height: 100.0%;">user20: The fire has spread to new areas. (Sentiment: 0.13636363636363635)</div>`)[0];
+                popup_c7278507bec12cd3bd4a5d737b21d953.setContent(html_b280f372b51fb4225fb0155a66c1ae10);
+            
+        
+
+        marker_5fdb133eb1f446f62da90260f8440058.bindPopup(popup_c7278507bec12cd3bd4a5d737b21d953)
+        ;
+
+        
+    
+    
+            var marker_13c7ce94d8af5f22d356175e37d0eae6 = L.marker(
+                [-32.23097906060958, 150.59714222450344],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_175dfb5e84136d79662acfe48a0c4ee2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_13c7ce94d8af5f22d356175e37d0eae6.setIcon(icon_175dfb5e84136d79662acfe48a0c4ee2);
+        
+    
+        var popup_ea9a20e7f38e546ca439f007f2879ddb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30bdd09e379e410773397e49d9ee038a = $(`<div id="html_30bdd09e379e410773397e49d9ee038a" style="width: 100.0%; height: 100.0%;">user21: The fire is catastrophic. (Sentiment: 0.0)</div>`)[0];
+                popup_ea9a20e7f38e546ca439f007f2879ddb.setContent(html_30bdd09e379e410773397e49d9ee038a);
+            
+        
+
+        marker_13c7ce94d8af5f22d356175e37d0eae6.bindPopup(popup_ea9a20e7f38e546ca439f007f2879ddb)
+        ;
+
+        
+    
+    
+            var marker_f755291243e6dd87e1e38e32f5c54107 = L.marker(
+                [-33.68231926121246, 140.10166290576745],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_3f01ac3f504a9dcde3dc2381e5b3a056 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_f755291243e6dd87e1e38e32f5c54107.setIcon(icon_3f01ac3f504a9dcde3dc2381e5b3a056);
+        
+    
+        var popup_17df6b18a5025ad2c704c33c4e97f9de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f08955e1a84c991f9ff0eb2b452d7d9 = $(`<div id="html_6f08955e1a84c991f9ff0eb2b452d7d9" style="width: 100.0%; height: 100.0%;">user22: Feeling hopeless about the fire. (Sentiment: 0.0)</div>`)[0];
+                popup_17df6b18a5025ad2c704c33c4e97f9de.setContent(html_6f08955e1a84c991f9ff0eb2b452d7d9);
+            
+        
+
+        marker_f755291243e6dd87e1e38e32f5c54107.bindPopup(popup_17df6b18a5025ad2c704c33c4e97f9de)
+        ;
+
+        
+    
+    
+            var marker_54a56c2e99b28aa2f2b097690338741b = L.marker(
+                [-33.20284857553458, 147.7276507864616],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_be79fc9b62d1bd89a29e12a764011629 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_54a56c2e99b28aa2f2b097690338741b.setIcon(icon_be79fc9b62d1bd89a29e12a764011629);
+        
+    
+        var popup_5404715411a312e1cac42adfffc2cafc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7720d29b518ad35ec602f238547b071a = $(`<div id="html_7720d29b518ad35ec602f238547b071a" style="width: 100.0%; height: 100.0%;">user23: The sky is covered in smoke. (Sentiment: 0.0)</div>`)[0];
+                popup_5404715411a312e1cac42adfffc2cafc.setContent(html_7720d29b518ad35ec602f238547b071a);
+            
+        
+
+        marker_54a56c2e99b28aa2f2b097690338741b.bindPopup(popup_5404715411a312e1cac42adfffc2cafc)
+        ;
+
+        
+    
+    
+            var marker_5d4f0fa65a129fdb31242bc427ecc1e3 = L.marker(
+                [-32.30029636955603, 146.62870625759317],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_cb08e39acf44d17beefd9c29258354af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_5d4f0fa65a129fdb31242bc427ecc1e3.setIcon(icon_cb08e39acf44d17beefd9c29258354af);
+        
+    
+        var popup_8ab06665e43ed1a8becf8363d35b219a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8741f399d3d168d09ce4aa412dbb2932 = $(`<div id="html_8741f399d3d168d09ce4aa412dbb2932" style="width: 100.0%; height: 100.0%;">user24: It’s awful to see the fire spreading. (Sentiment: -1.0)</div>`)[0];
+                popup_8ab06665e43ed1a8becf8363d35b219a.setContent(html_8741f399d3d168d09ce4aa412dbb2932);
+            
+        
+
+        marker_5d4f0fa65a129fdb31242bc427ecc1e3.bindPopup(popup_8ab06665e43ed1a8becf8363d35b219a)
+        ;
+
+        
+    
+    
+            var marker_f48883a6fcb194e3c5b7db4e5df1487b = L.marker(
+                [-34.804788227040454, 147.29647637770805],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_9a22456e113648a829260ba6a15110d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_f48883a6fcb194e3c5b7db4e5df1487b.setIcon(icon_9a22456e113648a829260ba6a15110d2);
+        
+    
+        var popup_2c97617b26b404b85a4670b5c985d420 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61d28240a45093730dc09cb295d61830 = $(`<div id="html_61d28240a45093730dc09cb295d61830" style="width: 100.0%; height: 100.0%;">user25: The bushfire is terrifying. (Sentiment: -1.0)</div>`)[0];
+                popup_2c97617b26b404b85a4670b5c985d420.setContent(html_61d28240a45093730dc09cb295d61830);
+            
+        
+
+        marker_f48883a6fcb194e3c5b7db4e5df1487b.bindPopup(popup_2c97617b26b404b85a4670b5c985d420)
+        ;
+
+        
+    
+    
+            var marker_b9e9935bad3bcb03cb05a54879030a8c = L.marker(
+                [-34.86573802749957, 149.5132371714565],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_8edcecf46a643f53080cd5528902c738 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_b9e9935bad3bcb03cb05a54879030a8c.setIcon(icon_8edcecf46a643f53080cd5528902c738);
+        
+    
+        var popup_0e1e8ae5e5ba0a8799842870e296421b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c50f1348fe8f6aacc262692be1fa0e98 = $(`<div id="html_c50f1348fe8f6aacc262692be1fa0e98" style="width: 100.0%; height: 100.0%;">user26: Wishing for everyone’s safety. (Sentiment: 0.0)</div>`)[0];
+                popup_0e1e8ae5e5ba0a8799842870e296421b.setContent(html_c50f1348fe8f6aacc262692be1fa0e98);
+            
+        
+
+        marker_b9e9935bad3bcb03cb05a54879030a8c.bindPopup(popup_0e1e8ae5e5ba0a8799842870e296421b)
+        ;
+
+        
+    
+    
+            var marker_93a40fa7524862ce53c1742ae1853bd3 = L.marker(
+                [-33.67352279197967, 140.61724267691696],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_60f083feddb5e732cf534e9fad0cd275 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_93a40fa7524862ce53c1742ae1853bd3.setIcon(icon_60f083feddb5e732cf534e9fad0cd275);
+        
+    
+        var popup_234f089bf89d6172a5ae48cab70bea20 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2856257ab00587e3da26194915a6529c = $(`<div id="html_2856257ab00587e3da26194915a6529c" style="width: 100.0%; height: 100.0%;">user27: Heartbreaking scenes from the bushfire. (Sentiment: 0.0)</div>`)[0];
+                popup_234f089bf89d6172a5ae48cab70bea20.setContent(html_2856257ab00587e3da26194915a6529c);
+            
+        
+
+        marker_93a40fa7524862ce53c1742ae1853bd3.bindPopup(popup_234f089bf89d6172a5ae48cab70bea20)
+        ;
+
+        
+    
+    
+            var marker_bb8c2de3b6b48979a2febb84211442e5 = L.marker(
+                [-36.58406023258716, 150.54078169053423],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_ee1833cc54b45cb6ad7772569a5f1483 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_bb8c2de3b6b48979a2febb84211442e5.setIcon(icon_ee1833cc54b45cb6ad7772569a5f1483);
+        
+    
+        var popup_036c8556fcd26d9cdb9f5b67c592772d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3267bb9883d37cae6b0dbc12bd629855 = $(`<div id="html_3267bb9883d37cae6b0dbc12bd629855" style="width: 100.0%; height: 100.0%;">user28: The fire has spread to new areas. (Sentiment: 0.13636363636363635)</div>`)[0];
+                popup_036c8556fcd26d9cdb9f5b67c592772d.setContent(html_3267bb9883d37cae6b0dbc12bd629855);
+            
+        
+
+        marker_bb8c2de3b6b48979a2febb84211442e5.bindPopup(popup_036c8556fcd26d9cdb9f5b67c592772d)
+        ;
+
+        
+    
+    
+            var marker_fa3923ecf394373085a381d32cc6d5ea = L.marker(
+                [-37.97156271675426, 143.58141506812098],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_292daf28de0bc472cd0c760dc40c097f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_fa3923ecf394373085a381d32cc6d5ea.setIcon(icon_292daf28de0bc472cd0c760dc40c097f);
+        
+    
+        var popup_d24f390ea20e523cb36e4320c7f32c24 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_08740d23818de7e9142dec6a2c6f7fd8 = $(`<div id="html_08740d23818de7e9142dec6a2c6f7fd8" style="width: 100.0%; height: 100.0%;">user29: The fire has spread to new areas. (Sentiment: 0.13636363636363635)</div>`)[0];
+                popup_d24f390ea20e523cb36e4320c7f32c24.setContent(html_08740d23818de7e9142dec6a2c6f7fd8);
+            
+        
+
+        marker_fa3923ecf394373085a381d32cc6d5ea.bindPopup(popup_d24f390ea20e523cb36e4320c7f32c24)
+        ;
+
+        
+    
+    
+            var marker_80a4fb8c12dd3805d1c2a6dacb883af7 = L.marker(
+                [-33.84121081427268, 142.0559305800721],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_34dc28d4ceadff19c36f6627bcc39f34 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_80a4fb8c12dd3805d1c2a6dacb883af7.setIcon(icon_34dc28d4ceadff19c36f6627bcc39f34);
+        
+    
+        var popup_ec2addb53d21fb20ab334c3d37173b67 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7d697d7ff3814943fed54d9b0150834 = $(`<div id="html_c7d697d7ff3814943fed54d9b0150834" style="width: 100.0%; height: 100.0%;">user30: This fire is a nightmare. (Sentiment: 0.0)</div>`)[0];
+                popup_ec2addb53d21fb20ab334c3d37173b67.setContent(html_c7d697d7ff3814943fed54d9b0150834);
+            
+        
+
+        marker_80a4fb8c12dd3805d1c2a6dacb883af7.bindPopup(popup_ec2addb53d21fb20ab334c3d37173b67)
+        ;
+
+        
+    
+    
+            var marker_991e2d03be415b1879e4f1936fc04b3e = L.marker(
+                [-34.112164435054225, 141.13491412035634],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_6a74bd32cf88a7551abfae5fd59806c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_991e2d03be415b1879e4f1936fc04b3e.setIcon(icon_6a74bd32cf88a7551abfae5fd59806c6);
+        
+    
+        var popup_2dd1b5353af86ede2ac1abf3acbd4c7d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0a6a11e872dbe6ba50dc4b693df31d8 = $(`<div id="html_f0a6a11e872dbe6ba50dc4b693df31d8" style="width: 100.0%; height: 100.0%;">user31: Wishing for everyone's safety. (Sentiment: 0.0)</div>`)[0];
+                popup_2dd1b5353af86ede2ac1abf3acbd4c7d.setContent(html_f0a6a11e872dbe6ba50dc4b693df31d8);
+            
+        
+
+        marker_991e2d03be415b1879e4f1936fc04b3e.bindPopup(popup_2dd1b5353af86ede2ac1abf3acbd4c7d)
+        ;
+
+        
+    
+    
+            var marker_b757a3536d6869cfbf4f71536efdfabc = L.marker(
+                [-34.58212807895957, 141.82417912685938],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_7fe8abc5ba278f08202fca6b54804011 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_b757a3536d6869cfbf4f71536efdfabc.setIcon(icon_7fe8abc5ba278f08202fca6b54804011);
+        
+    
+        var popup_63c74a3863b2f15f6bc72768b0f7bd7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c1f8469dec96329982cd4191d9de7e0 = $(`<div id="html_8c1f8469dec96329982cd4191d9de7e0" style="width: 100.0%; height: 100.0%;">user32: The fire is uncontrollable. (Sentiment: 0.0)</div>`)[0];
+                popup_63c74a3863b2f15f6bc72768b0f7bd7f.setContent(html_8c1f8469dec96329982cd4191d9de7e0);
+            
+        
+
+        marker_b757a3536d6869cfbf4f71536efdfabc.bindPopup(popup_63c74a3863b2f15f6bc72768b0f7bd7f)
+        ;
+
+        
+    
+    
+            var marker_6dfc25f35dd79456d105a15fe540947b = L.marker(
+                [-38.269327925298796, 149.5448199137994],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_a87463bd1b4050a96ab9ac9cfbda36b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_6dfc25f35dd79456d105a15fe540947b.setIcon(icon_a87463bd1b4050a96ab9ac9cfbda36b2);
+        
+    
+        var popup_150ba0d0e277841f81e9ab6c0be6c3eb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a08e0c56f796525d4360e1435d61d9a7 = $(`<div id="html_a08e0c56f796525d4360e1435d61d9a7" style="width: 100.0%; height: 100.0%;">user33: Praying for the affected families. (Sentiment: 0.0)</div>`)[0];
+                popup_150ba0d0e277841f81e9ab6c0be6c3eb.setContent(html_a08e0c56f796525d4360e1435d61d9a7);
+            
+        
+
+        marker_6dfc25f35dd79456d105a15fe540947b.bindPopup(popup_150ba0d0e277841f81e9ab6c0be6c3eb)
+        ;
+
+        
+    
+    
+            var marker_d640e44d46a7a2d05d4c637e9e9c308e = L.marker(
+                [-36.971844830121526, 150.387474137992],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_53e1fb681cafcc3160846bcbef20bf47 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_d640e44d46a7a2d05d4c637e9e9c308e.setIcon(icon_53e1fb681cafcc3160846bcbef20bf47);
+        
+    
+        var popup_41f045936b1b2bc76e726caf89f8190b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4fc630632bda8c93d266bd8df62a4a0 = $(`<div id="html_f4fc630632bda8c93d266bd8df62a4a0" style="width: 100.0%; height: 100.0%;">user34: It’s heartbreaking to see this. (Sentiment: 0.0)</div>`)[0];
+                popup_41f045936b1b2bc76e726caf89f8190b.setContent(html_f4fc630632bda8c93d266bd8df62a4a0);
+            
+        
+
+        marker_d640e44d46a7a2d05d4c637e9e9c308e.bindPopup(popup_41f045936b1b2bc76e726caf89f8190b)
+        ;
+
+        
+    
+    
+            var marker_71ab8abfdbd7eff46a583e60953b959b = L.marker(
+                [-37.44123465864157, 141.25401774890415],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_04eb2c16da7b32e0e443121499c14c3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_71ab8abfdbd7eff46a583e60953b959b.setIcon(icon_04eb2c16da7b32e0e443121499c14c3a);
+        
+    
+        var popup_f2fe7acb1adc15d8e2ba4766025639f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad7dbbcda30b5ae7b3dfb186c918e6e5 = $(`<div id="html_ad7dbbcda30b5ae7b3dfb186c918e6e5" style="width: 100.0%; height: 100.0%;">user35: The damage is enormous. (Sentiment: 0.0)</div>`)[0];
+                popup_f2fe7acb1adc15d8e2ba4766025639f0.setContent(html_ad7dbbcda30b5ae7b3dfb186c918e6e5);
+            
+        
+
+        marker_71ab8abfdbd7eff46a583e60953b959b.bindPopup(popup_f2fe7acb1adc15d8e2ba4766025639f0)
+        ;
+
+        
+    
+    
+            var marker_4a1715dd90aaf7eabbc90bcf91b33520 = L.marker(
+                [-33.404913077027274, 141.22682027509148],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_9f5d852a0764921ea3bb3576d4830dc8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_4a1715dd90aaf7eabbc90bcf91b33520.setIcon(icon_9f5d852a0764921ea3bb3576d4830dc8);
+        
+    
+        var popup_51f5c2f3b261e0062b6caf4704be5e30 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_796d63a6cc66838ae21e106057ab82d1 = $(`<div id="html_796d63a6cc66838ae21e106057ab82d1" style="width: 100.0%; height: 100.0%;">user36: Terrible disaster! (Sentiment: -1.0)</div>`)[0];
+                popup_51f5c2f3b261e0062b6caf4704be5e30.setContent(html_796d63a6cc66838ae21e106057ab82d1);
+            
+        
+
+        marker_4a1715dd90aaf7eabbc90bcf91b33520.bindPopup(popup_51f5c2f3b261e0062b6caf4704be5e30)
+        ;
+
+        
+    
+    
+            var marker_e1c5347cca2161e95c31f1eb7db01283 = L.marker(
+                [-32.066904970458395, 148.31662090678606],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_ab8437c59dd5cb72946a3cdc8ef2d122 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_e1c5347cca2161e95c31f1eb7db01283.setIcon(icon_ab8437c59dd5cb72946a3cdc8ef2d122);
+        
+    
+        var popup_957eb8eda0ff90e433378957e0b15d87 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f9d9bbd99bd112df1aa370a91f0f59a = $(`<div id="html_2f9d9bbd99bd112df1aa370a91f0f59a" style="width: 100.0%; height: 100.0%;">user37: The fire is massive. (Sentiment: 0.0)</div>`)[0];
+                popup_957eb8eda0ff90e433378957e0b15d87.setContent(html_2f9d9bbd99bd112df1aa370a91f0f59a);
+            
+        
+
+        marker_e1c5347cca2161e95c31f1eb7db01283.bindPopup(popup_957eb8eda0ff90e433378957e0b15d87)
+        ;
+
+        
+    
+    
+            var marker_4442601b3f4f0702cb5b5288dcaae5e1 = L.marker(
+                [-34.71104793637491, 141.80806555879124],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_eccd756232908b1140fcfd681d645187 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_4442601b3f4f0702cb5b5288dcaae5e1.setIcon(icon_eccd756232908b1140fcfd681d645187);
+        
+    
+        var popup_2e8d4132670d226f8cc06548cb682ea0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c736171449cbb71d9186e575377802c = $(`<div id="html_2c736171449cbb71d9186e575377802c" style="width: 100.0%; height: 100.0%;">user38: This fire is a nightmare. (Sentiment: 0.0)</div>`)[0];
+                popup_2e8d4132670d226f8cc06548cb682ea0.setContent(html_2c736171449cbb71d9186e575377802c);
+            
+        
+
+        marker_4442601b3f4f0702cb5b5288dcaae5e1.bindPopup(popup_2e8d4132670d226f8cc06548cb682ea0)
+        ;
+
+        
+    
+    
+            var marker_d4f5e7415119158d00a17d1b2a7e429f = L.marker(
+                [-33.34231574012785, 143.3047758856907],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_f12891fe16771aa832a107babd805a22 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_d4f5e7415119158d00a17d1b2a7e429f.setIcon(icon_f12891fe16771aa832a107babd805a22);
+        
+    
+        var popup_8d6cc4d542718980ba2bc4e9ed6cab98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_274989888857398d4ad8e9fcf2fb8b73 = $(`<div id="html_274989888857398d4ad8e9fcf2fb8b73" style="width: 100.0%; height: 100.0%;">user39: The fire is out of control! (Sentiment: 0.0)</div>`)[0];
+                popup_8d6cc4d542718980ba2bc4e9ed6cab98.setContent(html_274989888857398d4ad8e9fcf2fb8b73);
+            
+        
+
+        marker_d4f5e7415119158d00a17d1b2a7e429f.bindPopup(popup_8d6cc4d542718980ba2bc4e9ed6cab98)
+        ;
+
+        
+    
+    
+            var marker_e4c12baaa9f3ffdaed4d358373b4779f = L.marker(
+                [-32.933862079710345, 141.8871781628288],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_a1c53f7077746ccca6e845c34e20007a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_e4c12baaa9f3ffdaed4d358373b4779f.setIcon(icon_a1c53f7077746ccca6e845c34e20007a);
+        
+    
+        var popup_410567c28f4fb416f39f451dd1b70706 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f167c3460b4c01f26f7d34f9456547c4 = $(`<div id="html_f167c3460b4c01f26f7d34f9456547c4" style="width: 100.0%; height: 100.0%;">user40: Can’t imagine the pain of those affected. (Sentiment: 0.0)</div>`)[0];
+                popup_410567c28f4fb416f39f451dd1b70706.setContent(html_f167c3460b4c01f26f7d34f9456547c4);
+            
+        
+
+        marker_e4c12baaa9f3ffdaed4d358373b4779f.bindPopup(popup_410567c28f4fb416f39f451dd1b70706)
+        ;
+
+        
+    
+    
+            var marker_6efaecd7edf989940575f49b24dc7b69 = L.marker(
+                [-37.940922823688545, 144.7661344734327],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_50a4cb1a177b33652b30a701438d9eb0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6efaecd7edf989940575f49b24dc7b69.setIcon(icon_50a4cb1a177b33652b30a701438d9eb0);
+        
+    
+        var popup_29519f1789b57acb0dcd1bbe7bd2de00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_342855fd88b6e81069575222a656c788 = $(`<div id="html_342855fd88b6e81069575222a656c788" style="width: 100.0%; height: 100.0%;">user41: Feeling so sad about the fire. (Sentiment: -0.5)</div>`)[0];
+                popup_29519f1789b57acb0dcd1bbe7bd2de00.setContent(html_342855fd88b6e81069575222a656c788);
+            
+        
+
+        marker_6efaecd7edf989940575f49b24dc7b69.bindPopup(popup_29519f1789b57acb0dcd1bbe7bd2de00)
+        ;
+
+        
+    
+    
+            var marker_915f7ee055623c24e96747b30d83f1c0 = L.marker(
+                [-33.54002278940363, 141.6657885802292],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_6acf0c630814e2912810c9972a185a22 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_915f7ee055623c24e96747b30d83f1c0.setIcon(icon_6acf0c630814e2912810c9972a185a22);
+        
+    
+        var popup_37bdfc536bfa0cdc16823971f42a199a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_82c1c2c657de8c9eb3f7e3446937b0fe = $(`<div id="html_82c1c2c657de8c9eb3f7e3446937b0fe" style="width: 100.0%; height: 100.0%;">user42: This fire is a nightmare. (Sentiment: 0.0)</div>`)[0];
+                popup_37bdfc536bfa0cdc16823971f42a199a.setContent(html_82c1c2c657de8c9eb3f7e3446937b0fe);
+            
+        
+
+        marker_915f7ee055623c24e96747b30d83f1c0.bindPopup(popup_37bdfc536bfa0cdc16823971f42a199a)
+        ;
+
+        
+    
+    
+            var marker_b16166e61a00f634a79f5e783e5a479d = L.marker(
+                [-32.56189516825953, 145.01169080683638],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_677561c4ec64dcc7c1e593a1cce6b58e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_b16166e61a00f634a79f5e783e5a479d.setIcon(icon_677561c4ec64dcc7c1e593a1cce6b58e);
+        
+    
+        var popup_a5d7449f031d397846a3944327c56e3e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f55b8da6de60b72585bc13149113211 = $(`<div id="html_3f55b8da6de60b72585bc13149113211" style="width: 100.0%; height: 100.0%;">user43: The fire has destroyed so much. (Sentiment: 0.2)</div>`)[0];
+                popup_a5d7449f031d397846a3944327c56e3e.setContent(html_3f55b8da6de60b72585bc13149113211);
+            
+        
+
+        marker_b16166e61a00f634a79f5e783e5a479d.bindPopup(popup_a5d7449f031d397846a3944327c56e3e)
+        ;
+
+        
+    
+    
+            var marker_be79c2830e9365a8f2e549aa689367e1 = L.marker(
+                [-37.1316720852662, 144.98998148852036],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_cf48ec69efb1f9dab3d5e687ec4d7605 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_be79c2830e9365a8f2e549aa689367e1.setIcon(icon_cf48ec69efb1f9dab3d5e687ec4d7605);
+        
+    
+        var popup_c4eb060b4d8806de652c37038818bdbe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1d26fc794696ef8bbe43cf6897d7c48 = $(`<div id="html_c1d26fc794696ef8bbe43cf6897d7c48" style="width: 100.0%; height: 100.0%;">user44: Stay strong everyone. (Sentiment: 0.4333333333333333)</div>`)[0];
+                popup_c4eb060b4d8806de652c37038818bdbe.setContent(html_c1d26fc794696ef8bbe43cf6897d7c48);
+            
+        
+
+        marker_be79c2830e9365a8f2e549aa689367e1.bindPopup(popup_c4eb060b4d8806de652c37038818bdbe)
+        ;
+
+        
+    
+    
+            var marker_03745189318775fd92ca32a5780cfdbf = L.marker(
+                [-33.40546173703084, 149.81020196623197],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_b95d7b911aa18a26682b5a0dc76811ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_03745189318775fd92ca32a5780cfdbf.setIcon(icon_b95d7b911aa18a26682b5a0dc76811ba);
+        
+    
+        var popup_6e16a511ecf7eeb7bcc44c2bcdb159e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_66f9102cca32702d275ec5409a8a7239 = $(`<div id="html_66f9102cca32702d275ec5409a8a7239" style="width: 100.0%; height: 100.0%;">user45: Everyone stay safe. (Sentiment: 0.5)</div>`)[0];
+                popup_6e16a511ecf7eeb7bcc44c2bcdb159e0.setContent(html_66f9102cca32702d275ec5409a8a7239);
+            
+        
+
+        marker_03745189318775fd92ca32a5780cfdbf.bindPopup(popup_6e16a511ecf7eeb7bcc44c2bcdb159e0)
+        ;
+
+        
+    
+    
+            var marker_3024330b855dd57efcc613107f0d96f7 = L.marker(
+                [-36.02297965394687, 142.05367995753465],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_5ee2736853ac89158007ea40936d6425 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_3024330b855dd57efcc613107f0d96f7.setIcon(icon_5ee2736853ac89158007ea40936d6425);
+        
+    
+        var popup_e33832024e44aadf6c2d6f0ce4dce0fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eaf8c79a7dfa3ba83ba902af77882751 = $(`<div id="html_eaf8c79a7dfa3ba83ba902af77882751" style="width: 100.0%; height: 100.0%;">user46: Wishing for everyone's safety. (Sentiment: 0.0)</div>`)[0];
+                popup_e33832024e44aadf6c2d6f0ce4dce0fc.setContent(html_eaf8c79a7dfa3ba83ba902af77882751);
+            
+        
+
+        marker_3024330b855dd57efcc613107f0d96f7.bindPopup(popup_e33832024e44aadf6c2d6f0ce4dce0fc)
+        ;
+
+        
+    
+    
+            var marker_2d3ccc1391e5e09c44ece970137cb517 = L.marker(
+                [-36.887755845534556, 145.0695709922278],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_be1a8327cb6185b6ea47a22e10cfd152 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_2d3ccc1391e5e09c44ece970137cb517.setIcon(icon_be1a8327cb6185b6ea47a22e10cfd152);
+        
+    
+        var popup_88e7f3ee0199173ff71d2c95072d55b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0575aed8e1b2564baa0fc47cd53fa425 = $(`<div id="html_0575aed8e1b2564baa0fc47cd53fa425" style="width: 100.0%; height: 100.0%;">user47: Feeling hopeless about the fire. (Sentiment: 0.0)</div>`)[0];
+                popup_88e7f3ee0199173ff71d2c95072d55b4.setContent(html_0575aed8e1b2564baa0fc47cd53fa425);
+            
+        
+
+        marker_2d3ccc1391e5e09c44ece970137cb517.bindPopup(popup_88e7f3ee0199173ff71d2c95072d55b4)
+        ;
+
+        
+    
+    
+            var marker_2d2f08986097631841bf09f3c55c478b = L.marker(
+                [-38.42583827788298, 145.4453547171366],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_92dfb78d067b98dd16b5957cc0fbd70c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_2d2f08986097631841bf09f3c55c478b.setIcon(icon_92dfb78d067b98dd16b5957cc0fbd70c);
+        
+    
+        var popup_349aece9fc9e60c2e4ecdf32df25e7f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_520f9a36e1915e941b13cdb5bb334f9b = $(`<div id="html_520f9a36e1915e941b13cdb5bb334f9b" style="width: 100.0%; height: 100.0%;">user48: The smoke is unbearable. (Sentiment: 0.0)</div>`)[0];
+                popup_349aece9fc9e60c2e4ecdf32df25e7f8.setContent(html_520f9a36e1915e941b13cdb5bb334f9b);
+            
+        
+
+        marker_2d2f08986097631841bf09f3c55c478b.bindPopup(popup_349aece9fc9e60c2e4ecdf32df25e7f8)
+        ;
+
+        
+    
+    
+            var marker_63f25464414b9caeaad1a2aa5429e55d = L.marker(
+                [-33.92676513907465, 146.9530565995881],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_8075eb3cdbfee3a04d84d2aa474830f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_63f25464414b9caeaad1a2aa5429e55d.setIcon(icon_8075eb3cdbfee3a04d84d2aa474830f9);
+        
+    
+        var popup_36df745d78133337bd2feecf91c5b309 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7909d0c90243df0ac64dec9ef4c1b7b = $(`<div id="html_d7909d0c90243df0ac64dec9ef4c1b7b" style="width: 100.0%; height: 100.0%;">user49: The fire is getting worse. (Sentiment: -0.4)</div>`)[0];
+                popup_36df745d78133337bd2feecf91c5b309.setContent(html_d7909d0c90243df0ac64dec9ef4c1b7b);
+            
+        
+
+        marker_63f25464414b9caeaad1a2aa5429e55d.bindPopup(popup_36df745d78133337bd2feecf91c5b309)
+        ;
+
+        
+    
+    
+            var marker_c6a671168ee6caabec1ecdfeb3217c85 = L.marker(
+                [-34.741729552215745, 149.95088741077825],
+                {}
+            ).addTo(map_82c09af0fa71fc6f0cb70cd90b41fd78);
+        
+    
+            var icon_e0c6c2b665d3e5531f5597cf1b7b8233 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_c6a671168ee6caabec1ecdfeb3217c85.setIcon(icon_e0c6c2b665d3e5531f5597cf1b7b8233);
+        
+    
+        var popup_6961b54a68dbf977da73d543316ce777 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b78189f243c9ad544e6ee8fce7e32b5 = $(`<div id="html_9b78189f243c9ad544e6ee8fce7e32b5" style="width: 100.0%; height: 100.0%;">user50: The fire is massive. (Sentiment: 0.0)</div>`)[0];
+                popup_6961b54a68dbf977da73d543316ce777.setContent(html_9b78189f243c9ad544e6ee8fce7e32b5);
+            
+        
+
+        marker_c6a671168ee6caabec1ecdfeb3217c85.bindPopup(popup_6961b54a68dbf977da73d543316ce777)
+        ;
+
+        
+    
+</script>
+</html>
