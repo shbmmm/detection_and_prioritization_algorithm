@@ -6,7 +6,7 @@ import random
 import openai
 
 # Replace with your OpenAI API key
-openai.api_key = 'sk-proj-cMgiloWEmRouvQIolWokT3BlbkFJX8azkLEllROnyMjbWodi'
+openai.api_key = 'api'
 
 # Function to get color based on sentiment
 def get_color(sentiment):
